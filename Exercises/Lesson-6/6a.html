@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>6a</title>
+  </head>
+  <body>
+    <script>
+      const now = new Date();
+      let hour = now.getHours() || 18;
+      const name = 'testName';
+      console.log(hour);
+      if (hour >= 6 && hour <= 12) {
+        console.log(`Good morning ${name}`);
+      } else if (hour >= 13 && hour <= 17) {
+        console.log(`Good afternoon ${name}`);
+      } else {
+        console.log(`Good night ${name}`);
+      }
+    </script>
+  </body>
+</html>

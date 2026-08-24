@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>coin-flip</title>
+  </head>
+  <body>
+    <p>Take a guess!</p>
+
+    <button onclick="
+      randomNumber = Math.random();
+      result = randomNumber >= 0 && randomNumber < 0.5 ? 'heads' : 'tails';
+      guess = 'heads';
+      console.log(result === guess ? 'You win!' : 'You lose!');
+    ">heads</button>
+
+    <button onclick="
+      randomNumber = Math.random();
+      result = randomNumber >= 0 && randomNumber < 0.5 ? 'heads' : 'tails';
+      guess = 'tails';
+      console.log(result === guess ? 'You win!' : 'You lose!');
+    ">tails</button>
+
+    <script>
+      let randomNumber;
+      let result;
+      let guess;
+    </script>
+  </body>
+</html>
