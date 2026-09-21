@@ -114,6 +114,41 @@
       console.log(object5);
       object5.method();
 
+      const object6 = {
+        num: 7
+      }
+      console.log(object6);
+      let object7 = object6;
+      
+      object7.num = 9;
+
+      console.log(object6);
+      console.log(object7);
+
+      const object8 = {
+        num: 10
+      }
+      object7 = object8;
+      console.log(object6);
+      console.log(object7);
+
+      const student = {
+        name: 'testName',
+        age: 10
+      };
+
+      function helper(student) {
+        student = {
+          name: 'testName3',
+          age: 11
+        };
+        student.name = 'testName2';
+      };
+
+      helper(student);
+
+      console.log(student);
+
     </script>
   </body>
 </html>
