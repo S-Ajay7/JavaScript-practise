@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+  </head>
+  <body>
+    <button onclick="
+      helper('heads');
+    " >heads</button>
+    <button onclick="
+      helper('tails');
+    " >tails</button>
+    <p class="js-result"></p>
+
+    <script>
+      function helper(text) {
+        const result = document.querySelector('.js-result');
+        result.innerHTML = `You chose: ${text}`;
+      }
+    </script>
+  </body>
+</html>

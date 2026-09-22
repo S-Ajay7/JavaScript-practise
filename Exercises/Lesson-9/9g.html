@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>9g</title>
+  </head>
+  <body>
+    <input class="js-input" placeholder="Enter the cost">
+    <button onclick="
+      calculateTotal();
+    ">Calculate</button>
+    <p class="js-total"></p>
+
+    <script>
+      function calculateTotal() {
+        const input = document.querySelector('.js-input');
+        let cost = Number(input.value);
+        if (cost < 40) {
+          cost = (cost * 100 + 1000) / 100;
+        }
+        document.querySelector('.js-total')
+          .innerHTML = `$${cost}`;
+      }
+    </script>
+  </body>
+</html>

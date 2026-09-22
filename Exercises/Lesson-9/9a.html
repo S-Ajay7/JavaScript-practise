@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+  </head>
+  <body>
+    <button>9a</button>
+    <button onclick="
+      secondButton();
+    " class="js-secondbutton">9b</button>
+
+    <script>
+      const buttonElement = document.querySelector('button');
+      console.log(buttonElement);
+
+      function secondButton() {
+        const secondButton = document.querySelector('.js-secondbutton');
+        secondButton.innerHTML = '9b done!';
+      }
+      
+
+
+    </script>
+  </body>
+</html>

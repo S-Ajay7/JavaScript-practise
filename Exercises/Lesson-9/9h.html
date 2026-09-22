@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>9h</title>
+  </head>
+  <body>
+    <input class="js-input" placeholder="Type something" onkeyup="
+      concurrentResult();
+    ">
+    <p class="js-result"></p>
+
+    <script>
+      function concurrentResult() {
+        const input = document.querySelector('.js-input');
+        const value = input.value;
+
+        const result = document.querySelector('.js-result');
+        result.innerHTML = value;
+      }
+    </script>
+  </body>
+</html>
