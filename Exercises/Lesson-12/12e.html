@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>12e</title>
+  </head>
+  <body>
+    <button class="js-cart-button">Add to cart</button>
+    <p class="js-result"></p>
+    <script>
+      let setTimeoutId;
+
+      const cartButton = document.querySelector('.js-cart-button');
+      cartButton.addEventListener('click', () => {
+        const result = document.querySelector('.js-result');
+        result.innerHTML = 'Added';
+        setTimeout(() => result.innerHTML = '', 2000);
+      });
+
+      function helper1() {
+        clearInterval(setTimeoutId);
+        const result = document.querySelector('.js-result');
+        result.innerHTML = 'Added';
+        setTimeoutId = setTimeout(() => result.innerHTML = '', 2000);
+      }
+    </script>
+  </body>
+</html>
